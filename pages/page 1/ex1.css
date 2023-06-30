@@ -143,7 +143,7 @@ footer{
     
     transform: rotate(45deg);
     background-color: #ffffff;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .icon:before,
@@ -196,23 +196,17 @@ footer{
     padding: 60px;
 }
 main{
-    display: flex;
+    /* display: flex; */
     border: 1px solid #ABABAB;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     padding: 20px;
     width: 900px;
 }
-.content_div:nth-child(odd){
-    width: 150px;
-    height: 150px;
-    background-color: #b5b5b5;
-    border: 1px solid #4d4d4d;
-}
-.content_div:nth-child(even){
-    width: 170px;
-    height: 100px;
-    background-color: #b3b3b3;
-    border: 1px solid #4d4d4d;
-
+main div{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 0.3px solid #000;
 }
