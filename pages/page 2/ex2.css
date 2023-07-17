@@ -1,0 +1,235 @@
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    margin-top: -10px;
+    padding: 45px;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+    height: 250px;                              
+    background-color: #d3f7fe;
+}
+footer{
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    height: 90px;
+    width: 100%;
+    background-color: #465355;
+}
+.header_text{
+    font-family: 'Agdasima', sans-serif;
+    font-size: 100px;
+    width: 700px;
+}
+.surname{
+    margin-top: -30px;
+    text-align: left;
+}
+.name{
+    text-align: right;
+    margin-top: -120px;
+}
+.logo{
+    width: 150px; 
+    height: 150px;
+    overflow: hidden;
+    background: #fff;
+    padding: 5px; 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: #aaa 1px solid;
+    box-shadow: 0px 1px 1px 1px #bbb; 
+    -moz-box-shadow: 0px 1px 1px 1px #bbb;
+    -webkit-box-shadow: 0px 1px 1px 1px #bbb;
+    position: relative;
+    top: 0;
+}
+.logo_image{
+    display: block;
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.contact{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0 0 0 20px;
+}
+.contact:hover{
+    background: #000;
+    color: #ffffff;
+}
+.bar_main{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0 0 0 20px;
+}
+.bar_main:hover{
+    background: #000;
+    color: #ffffff;
+}
+
+.barside{
+    height: 100%;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 25px;
+    margin-right: 25px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 45px 0 0 0;
+    border-right: 1px solid #ABABAB;
+    width: 140px;
+    overflow: hidden;
+    z-index: 5;
+
+    background-color: #ffffff;
+
+}
+
+
+.barside ul{
+    display: block;
+    width: 100%;
+    padding: 0 0 0 20px;  
+}
+
+.barside ul li{
+
+    /* background-color: #f6b0b0; */
+    width: 100%;
+    margin: 7px;
+    margin-left: 0;
+    position: relative;
+    display: none;
+    padding-left: 30px;
+}
+.barside ul:hover > li{
+    display: block;
+}
+.barside ul li:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.icon{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    transform-origin: right top;
+
+}
+
+.barside ul li:hover > .icon{
+    
+    transform: rotate(45deg);
+    background-color: #ffffff;
+    transition: all 1s;
+}
+
+.icon:before,
+.icon:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #000;
+
+}
+
+.icon:after{
+
+    width: 1px;
+    height: 100%;
+
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    background-color: #000;
+
+}
+
+
+
+.barside{
+    border: 1px solid #bbbbbb;
+}
+/* .barside ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+.barside ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    /* flex-basis: 500px; */
+    justify-content: center;
+    padding: 60px;
+}
+main{
+    /* display: flex; */
+    border: 1px solid #ABABAB;
+    /* justify-content: space-around; */
+    align-items: center;
+    padding: 20px;
+    width: 900px;
+}
+/* main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* width: 100%; */
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 0.3px solid #000;
+}
+
+
+.text, .text_p, .username, .user_surname, .age, .prof{
+    border: 1px solid #000;
+    width: 140px;
+}
+.text_in, .text_in_p, .text_user{
+    background-color: #ffa9a9;
+    color: #ffffff;
+    /* border-radius: 50%; */
+    width: 150px;
+    /* padding: 20px; */
+}
+
+
+.block-res{
+
+
+}
